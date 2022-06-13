@@ -13,7 +13,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    border: 1px solid green;
 }
 .logo-content {
     display: flex;
@@ -38,4 +38,56 @@ body{
 * {
     box-sizing: border-box;
 }
+.form-content{
+    min-height: calc(100% - 80px);
+    background-color: light rgb(11, 241, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid rgb(223, 17, 17);
+}
+.form {
+    width: 65%;
+    padding: 44px 60px;
+    background: greenyellow 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px rgb(250, 247, 247);
+    border: 1px solid black;
+    border-radius: 8px;
+    opacity: 1;
+}
+.form-head {
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: brown;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid blue;
+}
+ .label {
+    min-width: 140px;
+ }
+ label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+ }
+.text{
+    font-size: 16px;
+    color: blueviolet;
+    opacity: 1;
+    font-family: Roboto;
+}
+.input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid chocolate;
+    border-radius: 4px;
+    resize: vertical;
+} 
 </style>
