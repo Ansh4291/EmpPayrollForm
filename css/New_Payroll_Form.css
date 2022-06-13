@@ -29,7 +29,7 @@ body{
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: blue;
+    color: rgb(10, 10, 11);
     text-transform: capitalize;
 }
 .emp-payroll {
@@ -40,28 +40,28 @@ body{
 }
 .form-content{
     min-height: calc(100% - 80px);
-    background-color: light rgb(11, 241, 11);
+    background-color: light rgb(69, 110, 69);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid rgb(223, 17, 17);
+    border: 0px solid rgb(226, 23, 23);
 }
 .form {
     width: 65%;
-    padding: 44px 60px;
-    background: greenyellow 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px rgb(250, 247, 247);
-    border: 1px solid black;
-    border-radius: 8px;
+    padding: 30px 65px;
+    background: rgb(126, 189, 245) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px rgb(18, 66, 75);
+    border: 5px solid rgb(3, 41, 57);
+    border-radius: 20px;
     opacity: 1;
 }
 .form-head {
-    font: normal normal bold 24px/37px Roboto;
+    font: normal normal bold 30px/40px Roboto;
     letter-spacing: 0px;
     color: brown;
     text-transform: capitalize;
     opacity: 1;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .row-content {
     display: flex;
@@ -78,16 +78,38 @@ body{
     display: inline-block;
  }
 .text{
-    font-size: 16px;
-    color: blueviolet;
+    font-size: 20px;
+    color: rgb(10, 2, 18);
     opacity: 1;
     font-family: Roboto;
 }
 .input{
     width: 100%;
     padding: 12px;
-    border: 1px solid chocolate;
-    border-radius: 4px;
+    border: 1px solid rgb(231, 103, 12);
+    border-radius: 10px;
     resize: vertical;
 } 
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    width: 50px;
+    border-radius: 50%;
+    margin: left 5px;
+}
+
+body {
+    background-color: rgb(245, 157, 177);
+}
 </style>
