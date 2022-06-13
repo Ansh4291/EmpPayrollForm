@@ -1,28 +1,33 @@
-body{
+body {
     margin: 0;
     height: 100%;
 }
+
 .header {
     padding: 15px 0;
     background-color: rgb(11, 246, 226);
 }
+
 .header-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
+    border: 1px solid rgb(96, 12, 50);
 }
+
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid rgb(204, 19, 228);
     width: 90%;
 }
+
 .logo-content-img {
     border: solid 0px rgb(8, 8, 8);
 }
+
 .emp-text {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
@@ -30,13 +35,16 @@ body{
     color: rgb(10, 10, 11);
     text-transform: capitalize;
 }
+
 .emp-payroll {
-    color: rgb(176, 226, 9);
+    color: rgb(217, 15, 210);
 }
+
 * {
     box-sizing: border-box;
 }
-.form-content{
+
+.form-content {
     min-height: calc(100% - 80px);
     background-color: light rgb(69, 110, 69);
     display: flex;
@@ -44,15 +52,17 @@ body{
     align-items: center;
     border: 0px solid rgb(226, 23, 23);
 }
+
 .form {
     width: 65%;
     padding: 30px 65px;
-    background: rgb(126, 189, 245) 0% 0% no-repeat padding-box;
+    background:0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 6px rgb(18, 66, 75);
     border: 5px solid rgb(3, 41, 57);
     border-radius: 20px;
     opacity: 1;
 }
+
 .form-head {
     font: normal normal bold 30px/40px Roboto;
     letter-spacing: 0px;
@@ -61,6 +71,7 @@ body{
     opacity: 1;
     padding-bottom: 30px;
 }
+
 .row-content {
     display: flex;
     flex-direction: row;
@@ -68,26 +79,31 @@ body{
     align-items: center;
     border: 0px solid blue;
 }
- .label {
+
+.label {
     min-width: 140px;
- }
- label{
+}
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
- }
-.text{
+}
+
+.text {
     font-size: 20px;
     color: rgb(10, 2, 18);
     opacity: 1;
     font-family: Roboto;
 }
-.input{
+
+.input {
     width: 100%;
     padding: 12px;
     border: 1px solid rgb(231, 103, 12);
     border-radius: 10px;
     resize: vertical;
-} 
+}
+
 .profile-radio-content {
     display: flex;
     flex-direction: row;
@@ -107,3 +123,94 @@ body{
     margin: left 5px;
 }
 
+.button-content {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #f60808;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 10px 7px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.SubmitButton {
+    border: none;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+}
+
+.cancelButton {
+    margin-left: 148px;
+    text-decoration: none;
+    text-align: center;
+}
+
+ @media only screen and (max-width: 960px) { 
+    .cancelButton {
+        margin-left: 20px;
+
+    }
+
+    .form {
+        width: 90%;
+        padding: 50px 30px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .uploadButton {
+        justify-content: flex-start;
+    }
+
+    .profile-radio-button {
+        flex-flow: wrap;
+    }
+
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: space;
+        margin-bottom: 2000px;
+    }
+
+    .submitButton {
+        margin: 0;
+    }
+
+    .button-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} 
+
+select {
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-style: dotted;
+    border-radius: 4px;
+    resize: vertical;
+    letter-spacing: 0px;
+    font: normal normal normal 20px Roboto;
+    color: black;
+}
