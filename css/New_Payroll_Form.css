@@ -5,7 +5,7 @@ body {
 
 .header {
     padding: 15px 0;
-    background-color: rgb(11, 246, 226);
+    background-color: rgb(240, 105, 51);
 }
 
 .header-content {
@@ -56,7 +56,7 @@ body {
 .form {
     width: 65%;
     padding: 30px 65px;
-    background:0% 0% no-repeat padding-box;
+    background:rgb(248, 154, 100) 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 6px rgb(18, 66, 75);
     border: 5px solid rgb(3, 41, 57);
     border-radius: 20px;
@@ -100,7 +100,7 @@ label {
     width: 100%;
     padding: 12px;
     border: 1px solid rgb(231, 103, 12);
-    border-radius: 10px;
+    border-radius: 20px;
     resize: vertical;
 }
 
@@ -143,6 +143,8 @@ label {
     padding: 10px 7px;
     border: 1px solid #000000;
     cursor: pointer;
+   background-color: rgb(249, 155, 155);
+    border-radius: 20px;
 }
 
 .SubmitButton {
@@ -160,7 +162,6 @@ label {
  @media only screen and (max-width: 960px) { 
     .cancelButton {
         margin-left: 20px;
-
     }
 
     .form {
@@ -190,7 +191,9 @@ label {
         flex-grow: 1;
         flex-direction: row;
         justify-content: space;
-        margin-bottom: 2000px;
+        margin-bottom: 200px;
+        border: 40%;
+        
     }
 
     .submitButton {
@@ -200,6 +203,7 @@ label {
     .button-content {
         flex-direction: column;
         align-items: flex-start;
+        border-radius: 10px;
     }
 } 
 
@@ -213,4 +217,8 @@ select {
     letter-spacing: 0px;
     font: normal normal normal 20px Roboto;
     color: black;
+}
+
+ body{
+    background-color: rgb(247, 226, 111);
 }
