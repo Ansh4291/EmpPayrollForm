@@ -51,7 +51,7 @@ class EmployeePayroll {
     set startDate(startDate) {
         this._startDate = startDate;
     }
-    
+
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !this.startDate ? "undefined" :
@@ -59,6 +59,6 @@ class EmployeePayroll {
 
         return "id=" + this.id + ", name='" + this.name + ", gender=" + this.gender +
             ", profilePic=" + this.profilePic + ", department=" + this.department +
-            ",salary=" + this.salary + ", startDate=" + empDate + ",note=" + this.note;
+            ",salary=" + this.salary + ", startDate=" + empDate + ", note=" + this.note;
     }
 }
