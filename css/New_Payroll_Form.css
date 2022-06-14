@@ -37,7 +37,7 @@ body {
 }
 
 .emp-payroll {
-    color: rgb(217, 15, 210);
+    color: rgb(9, 114, 243);
 }
 
 * {
@@ -50,13 +50,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
     border: 0px solid rgb(226, 23, 23);
 }
 
 .form {
     width: 65%;
     padding: 30px 65px;
-    background: rgb(248, 154, 100) 0% 0% no-repeat padding-box;
+    background: 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 6px rgb(18, 66, 75);
     border: 5px solid rgb(3, 41, 57);
     border-radius: 20px;
@@ -99,8 +100,8 @@ label {
 .input {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgb(231, 103, 12);
-    border-radius: 20px;
+    border: 3px solid chocolate;
+    border-radius: 30px;
     resize: vertical;
 }
 
@@ -212,13 +213,16 @@ select {
     padding: 12px;
     border: 1px solid #ccc;
     border-style: dotted;
-    border-radius: 4px;
+    border-radius: 20px;
     resize: vertical;
     letter-spacing: 0px;
     font: normal normal normal 20px Roboto;
-    color: black;
+    color: rgb(16, 15, 15);
+    
 }
-
-body {
-    background-color: rgb(247, 226, 111);
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(255, 0, 0);
 }
