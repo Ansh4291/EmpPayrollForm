@@ -1,13 +1,22 @@
+let empPayrollList;
 window.addEventListener('DOMContentLoaded', (event) => {
+    empPayrollList = getEmployeePayrollDataFromStorage();
+    document.querySelector(".emp-count").textContent = empPayrollList.length;
     createInnerHtml();
 });
 
-const createInnerHtml = () => {
+const getEmployeePayrollDataFromStorage = () => {
+    return localStorage.getItem('EmployeePayrollList') ?
+                        JSON.parse(localStorage.getItem('EmployeePayrollList')) : []; 
+}
 
+const createInnerHtml = () => {
+    if(empPayrollList.length ==0)
+    return;
     const headerHtml = "<tr><th>Profile</th><th>Name</th><th>Gender</th><th>Department</th>" +
         "<th>Salary</th><th>Start Date</th><th>Actions</th></tr>";
     let innerHtml = `${headerHtml}`;
-    let empPayrollList = createEmployeePayrollJSON();
+    // let empPayrollList = createEmployeePayrollJSON();
     for (const empPayrollData of empPayrollList) {
         innerHtml = `${innerHtml}
             <tr>
@@ -28,36 +37,36 @@ const createInnerHtml = () => {
     document.querySelector('#display').innerHTML = innerHtml;
 }
 
-createEmployeePayrollJSON = () => {
-    let empPayrollListLocal = [
-        {
-            _name: 'Narayan Mahadevan',
-            _gender: 'male',
-            _department: [
-                'Engineering',
-                'Finance'
-            ],
-            _salary: '500000',
-            _startDate: '29 Oct 2019',
-            _note: '',
-            _id: new Date().getTime(),
-            _profilePic: '/assests/profile-images/Ellipse -3.png'
-        },
-        {
-            _name: 'Aishwariya Arora',
-            _gender: 'Female',
-            _department: [
-                'Sales'
-            ],
-            _salary: '300000',
-            _startDate: '1 jan 2019',
-            _note: '',
-            _id: new Date().getTime() + 1,
-            _profilePic: '/assests/profile-images/Ellipse -1.png'
-        }
-    ];
-    return empPayrollListLocal;
-}
+// createEmployeePayrollJSON = () => {
+//     let empPayrollListLocal = [
+//         {
+//             _name: 'Narayan Mahadevan',
+//             _gender: 'male',
+//             _department: [
+//                 'Engineering',
+//                 'Finance'
+//             ],
+//             _salary: '500000',
+//             _startDate: '29 Oct 2019',
+//             _note: '',
+//             _id: new Date().getTime(),
+//             _profilePic: '/assests/profile-images/Ellipse -3.png'
+//         },
+//         {
+//             _name: 'Aishwariya Arora',
+//             _gender: 'Female',
+//             _department: [
+//                 'Sales'
+//             ],
+//             _salary: '300000',
+//             _startDate: '1 jan 2019',
+//             _note: '',
+//             _id: new Date().getTime() + 1,
+//             _profilePic: '/assests/profile-images/Ellipse -1.png'
+//         }
+//     ];
+//     return empPayrollListLocal;
+// }
 
 const getDeptHtml = (deptList) => {
     let deptHtml = '';

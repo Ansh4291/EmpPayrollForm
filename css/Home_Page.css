@@ -10,7 +10,8 @@ body {
 
 .header-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 30px 0 10px;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(96, 12, 50);
@@ -103,10 +104,11 @@ body {
 }
 
 .table {
-    width: 100%;
+    width: 80%;
     border-collapse: separate;
-    border-spacing: 15px;
+    border-spacing: 0px;
     min-width: 800px;
+    margin-left: 10%;
 }
 
 td,
