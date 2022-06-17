@@ -1,5 +1,11 @@
 class EmployeePayroll {
     // getter and setter method 
+    get id(){
+        return this._id;
+    }
+    set id(id){
+        this._id = id;
+    }
     get name() {
         return this._name;
     }
@@ -52,7 +58,7 @@ class EmployeePayroll {
         // const empDate = !this.startDate ? "undefined" :
         //     this.startDate.toLocaleDateString("en-US", options);
 
-        return " name='" + this.name + ", gender=" + this.gender +
+        return "id=" + this.id + " name='" + this.name + ", gender=" + this.gender +
             ", profilePic=" + this.profilePic + ", department=" + this.department +
             ",salary=" + this.salary + ", startDate=" + empDate + ", note=" + this.note;
     }
