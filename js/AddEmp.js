@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     empPayrollList = getEmployeePayrollDataFromStorage();
     document.querySelector(".emp-count").textContent = empPayrollList.length;
     createInnerHtml();
+    localStorage.removeItem('editEmp');
 });
 
 const getEmployeePayrollDataFromStorage = () => {
@@ -28,7 +29,7 @@ const createInnerHtml = () => {
                 <td>${empPayrollData._salary}</td>
                 <td>${empPayrollData._startDate}</td>
                 <td>
-                   <img id="${empPayrollData._name}" onclick="remove(this)"
+                   <img id="${empPayrollData._id}" onclick="remove(this)"
                    src="/assests/icons/delete-black-18dp.svg" alt="delete">
                    <img id="${empPayrollData._id}" onclick="update(this)"
                    src="/assests/icons/create-black-18dp.svg" alt="edit">
@@ -39,37 +40,6 @@ const createInnerHtml = () => {
     document.querySelector('#display').innerHTML = innerHtml;
 }
 
-// createEmployeePayrollJSON = () => {
-//     let empPayrollListLocal = [
-//         {
-//             _name: 'Narayan Mahadevan',
-//             _gender: 'male',
-//             _department: [
-//                 'Engineering',
-//                 'Finance'
-//             ],
-//             _salary: '500000',
-//             _startDate: '29 Oct 2019',
-//             _note: '',
-//             _id: new Date().getTime(),
-//             _profilePic: '/assests/profile-images/Ellipse -3.png'
-//         },
-//         {
-//             _name: 'Aishwariya Arora',
-//             _gender: 'Female',
-//             _department: [
-//                 'Sales'
-//             ],
-//             _salary: '300000',
-//             _startDate: '1 jan 2019',
-//             _note: '',
-//             _id: new Date().getTime() + 1,
-//             _profilePic: '/assests/profile-images/Ellipse -1.png'
-//         }
-//     ];
-//     return empPayrollListLocal;
-// }
-
 const getDeptHtml = (deptList) => {
     let deptHtml = '';
     for (const dept of deptList) {
@@ -79,13 +49,21 @@ const getDeptHtml = (deptList) => {
 }
 
 const remove = (node) => {
-    let empPayrollData = empPayrollList.find(empData => empData._name == node.id);
+    let empPayrollData = empPayrollList.find(empData => empData._id == node.id);
    if(!empPayrollData) return;
     const index = empPayrollList 
-                    .map(empData => empData._name)
-                    .indexOf(empPayrollData._name);
+                    .map(empData => empData._id)
+                    .indexOf(empPayrollData._id);
     empPayrollList.splice(index, 1);
     localStorage.setItem('EmployeePayrollList', JSON.stringify(empPayrollList));
     document.querySelector('.emp-count').textContent = empPayrollList.length;
     createInnerHtml();
+}
+
+const update = (node) => {
+    let empPayrollData = empPayrollList.find(empData => empData._id == node.id)
+    if(!empPayrollData) return;
+    localStorage.setItem('editEmp',JSON.stringify(empPayrollData))
+    window.location.replace(site_properties.home_page);
+    
 }
