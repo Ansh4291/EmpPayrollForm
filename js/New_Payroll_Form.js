@@ -253,3 +253,9 @@ const checkForUpdate = () => {
     employeePayrollObj = JSON.parse(employeePayrollJSON);
     setForm();
 }
+const createNewEmpId = () => {
+    let empId = localStorage.getItem("EmpId");
+    empId = !empId ? 1 : (parseInt(empId)+1).toString();
+    localStorage.setItem("EmpId", empId);
+    return empId;
+}
