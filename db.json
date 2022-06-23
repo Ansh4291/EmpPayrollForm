@@ -1,0 +1,113 @@
+{
+  "EmployeePayrollDB": [
+    {
+      "id": 1,
+      "_name": "Mark",
+      "_gender": "male",
+      "_department": [
+        "Engineering",
+        "Finance"
+      ],
+      "_salary": "500000",
+      "_startDate": "29 Oct 2019",
+      "_note": "All In One",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png"
+    },
+    {
+      "_name": "Ashish",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 3
+    },
+    {
+      "_name": "Ashish",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 4
+    },
+    {
+      "_name": "Ashish",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 5
+    },
+    {
+      "_name": "Ashish",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 6
+    },
+    {
+      "_name": "Ashish",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 7
+    },
+    {
+      "_name": "Anshul",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 8
+    },
+    {
+      "_name": "Anshul",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "31 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 9
+    },
+    {
+      "_name": "Anshul",
+      "gender": "male",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "31 Oct 2019",
+      "_note": "",
+      "_profilePic": "/assest/profile-images/Ellipse -1.png",
+      "id": 10
+    }
+  ]
+}
